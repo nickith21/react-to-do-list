@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>To Do List</title>
+    <!-- Don't use this in production: -->
+    <!-- this is for learning purposes only -->
+    <!-- this is for babel transpiling -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>ToDo List</h1>
+    <!-- We will put our React component inside this div. -->
+    <div id="root"></div>
+
+    <!-- Load React. -->
+    <!-- unpkg is an npm service that downloads npm packages -->
+    <script
+      src="https://unpkg.com/react/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Load the script the you will write JSX in  -->
+    <!-- src defer and type are parameters to this  script tag  -->
+    <!-- you need type="text/babel" to interpret the JSX we write  -->
+    <script src="form.js" defer type="text/babel"></script>
+    <script src="todo.js" defer type="text/babel"></script>
+    <script src="index.js" defer type="text/babel"></script>
+  </body>
+</html>
